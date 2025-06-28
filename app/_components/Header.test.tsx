@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import Header from "./Header";
+import Header from "./header";
 
 describe("Running tests for Header", () => {
   it("should render", async () => {
