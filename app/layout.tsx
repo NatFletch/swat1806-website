@@ -1,3 +1,9 @@
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -5,7 +11,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+      </body>
     </html>
   );
 }
