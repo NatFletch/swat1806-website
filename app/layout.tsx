@@ -30,6 +30,7 @@ export default function RootLayout({
           <ClientThemeProvider>
             <Header navItems={navItems} logo="S.W.A.T. 1806" />
             {children}
+            <br />
           </ClientThemeProvider>
         </AppRouterCacheProvider>
       </body>
